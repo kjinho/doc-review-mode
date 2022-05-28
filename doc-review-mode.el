@@ -53,7 +53,7 @@
      (pcase major-mode
        ('org-mode
         (replace-underscore-with-latex citation-text))
-       (other citation-text)))))
+       (_ citation-text)))))
 
 (defun doc-review-advance-other-pdf ()
   (interactive)
